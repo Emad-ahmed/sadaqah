@@ -1,0 +1,173 @@
+.donation {
+  background: #c7c5c5;
+  padding-bottom: 1rem;
+  margin-top: -6.2rem;
+}
+
+.donation .col-lg-4, .col-lg-2 {
+  margin-top: 1.4rem;
+}
+
+.donation .col-lg-4 {
+  margin-top: 1.8rem;
+}
+
+.donatefund {
+  background: white;
+  color: #420908 !important;
+  font-weight: bolder;
+  width: 10rem;
+  padding-bottom: 0.7rem;
+  border: 1px solid #420908 !important;
+}
+
+.donatefund {
+  padding-left: 1.2rem;
+  padding-top: 0.8rem;
+}
+
+.donation button {
+  background: #420908 !important;
+  width: 12rem;
+  color: white;
+  border: none;
+  padding: 0.4rem;
+  margin-top: 0.3rem;
+}
+
+.donation button:hover {
+  background: white !important;
+  color: black !important;
+  border: 1px solid #005BAA;
+}
+
+.input-group-text {
+  background: #420908 !important;
+  color: white;
+}
+
+.cardview img {
+  height: 150px;
+  width: 100%;
+}
+
+.item {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.item-card {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.item-card-title {
+  font-size: 15px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.item-card-title i {
+  font-size: 15px;
+  transition: 1s;
+  cursor: pointer;
+  color: #ffa710;
+}
+
+.card-title i:hover {
+  transform: scale(1.25) rotate(100deg);
+  color: #18d4ca;
+}
+
+.card {
+  height: 18rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-text {
+  height: 80px;
+}
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform 0.3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: "";
+  pointer-events: none;
+}
+
+.card::before {
+  transform-origin: left top;
+}
+
+.card::after {
+  transform-origin: right bottom;
+}
+
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
+.item a {
+  text-decoration: none !important;
+  color: black;
+}
+
+.item h5 {
+  font-size: 1rem !important;
+}
+
+.item a:hover {
+  color: black;
+}
+
+.btndonate {
+  background: #FAED12 !important;
+  margin-top: 1rem;
+  width: 10rem;
+}
+
+.btndonate:hover {
+  background: #420908 !important;
+  color: #FAED12 !important;
+  border: 1px solid #FAED12;
+  transition: 1s;
+}
+
+.itemrelief .card {
+  height: 13rem;
+}
+
+@media screen and (max-width: 900px) {
+  .donation {
+    text-align: center !important;
+  }
+  .donatefund {
+    width: 10rem;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .item-card img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .carousel-item img {
+    height: 22rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.cards_item a {
+  text-decoration: none !important;
+}/*# sourceMappingURL=index.css.map */
