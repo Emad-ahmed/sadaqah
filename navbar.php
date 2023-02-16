@@ -20,7 +20,7 @@
 		<li><a href="aboutus.php">About</a></li>
 		<li><a href="#work">Our Work</a></li>
     <li><a href="event.php">Event</a></li>
-		<li><a href="#projects">Testimonials</a></li>
+		<li><a href="zakatCalculator.php">Zakat Calculator</a></li>
     <li><a href="contact.php">Contact</a></li>
 		<li><a href="#contact">FAQ</a></li>
 	</ul>

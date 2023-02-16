@@ -239,47 +239,35 @@
 <div class="main maincard mt-5" data-aos="fade-up">
 
   <ul class="cards">
-    <li class="cards_item">
-      <a href="">
-      <div class="card">
-        <div class="card_image"><img src="img/trust1.jpg"></div>
-        <div class="card_content">
-          <h2 class="card_title">One Night in Al Aqsa 2023</h2>
-          <p class="card_text">Discover the secrets of Al-Aqsa during an exclusive showing of this awe-inspiring documentary!
+  <?php
+    include 'config.php';
 
-      </p>
-          <p class="card_text">Fri 29 Jun</p>
+    $alldata = mysqli_query($conn, "SELECT * FROM `event`");
+
+
+    while ($row = mysqli_fetch_array($alldata)) {
+    if (strlen($row['description']) > 100)
+      $new_string = substr($row['description'], 0, 100) . '';
+    else
+      $new_string = $row['description'];
+    echo "<li class='cards_item'>
+      <a href='eventshow.php?id=$row[id]'>
+      <div class='card'>
+        <div class='card_image'><img src='$row[image]'></div>
+        <div class='card_content'>
+          <h2 class='card_title'>$row[title]</h2>
+          <p class='card_text'>$new_string</p>
+          <p class='card_text'>$row[start_date]</p>
 
         </div>
       </div>
   </a>
-    </li>
-    <li class="cards_item">
-    <a href="">
-      <div class="card">
-        <div class="card_image"><img src="img/trust1.jpg"></div>
-        <div class="card_content">
-          <h2 class="card_title">The Great Muslim Pantomime 2022 - 2023</h2>
-          <p class="card_text">
-A pantomime that Muslim families all over the kingdom could enjoy over the festive holiday</p>
-  
-        </div>
-      </div>
-</a>
-    </li>
-    <li class="cards_item">
-    <a href="">
-      <div class="card">
-        <div class="card_image"><img src="img/trust1.jpg"></div>
-        <div class="card_content">
-          <h2 class="card_title">Palestine Marathon</h2>
-          <p class="card_text">
-Join Penny Appeal in the hills of Bethlehem for the Palestine Marathon. </p>
-       
-        </div>
-      </div>
-</a>
-    </li>
+    </li>";
+   
+    }
+
+    ?>
+   
     
   </ul>
 </div>

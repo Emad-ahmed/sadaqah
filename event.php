@@ -12,17 +12,19 @@
 
 
     while ($row = mysqli_fetch_array($alldata)) {
+    if (strlen($row['description']) > 100)
+      $new_string = substr($row['description'], 0, 100) . '';
+    else
+      $new_string = $row['description'];
 
     echo "<li class='cards_item'>
       <a href='eventshow.php?id=$row[id]' class='text-decoration-none'>
       <div class='card'>
-        <div class='card_image'><img src='img/trust1.jpg'></div>
+        <div class='card_image'><img src='$row[image]'></div>
         <div class='card_content'>
-          <h2 class='card_title'>One Night in Al Aqsa 2023</h2>
-          <p class='card_text'>Discover the secrets of Al-Aqsa during an exclusive showing of this awe-inspiring documentary!
-
-</p>
-          <p class='card_text'>Fri 29 Jun</p>
+          <h2 class='card_title'>$row[title]</h2>
+          <p class='card_text'>$new_string</p>
+          <p class='card_text'>$row[start_date]</p>
 
         </div>
       </div>

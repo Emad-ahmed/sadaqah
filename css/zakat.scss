@@ -1,0 +1,68 @@
+.hotline
+{
+    margin-top: 10rem !important;
+    
+}
+
+.calculatezakat
+{
+    background: #420908;
+    color: white;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 4rem;
+}
+
+.calculatezakat:hover{
+    background: #FAED12;
+    border: 1px solid #420908;
+    color: #420908;
+}
+
+.donationhotline
+{
+    font-size: 2rem;
+    color: #420908;
+}
+
+.nisab
+{
+    font-size: 1.5rem;
+    color: #420908;
+}
+
+@media screen and (max-width: 900px) {
+	
+	.mobileview
+    {
+        display: none !important;
+    }
+    .hotline
+{
+    margin-top: 2rem !important;
+    
+}
+
+	
+}
+
+.readzakat
+{
+    background: white !important;
+    color: #420908 !important;
+    font-weight: bolder !important;
+}
+
+.zakath1
+{
+    color: #420908;
+}
+
+.readzakat
+{
+    color: #420908;
+    text-decoration: none ;
+}
+
