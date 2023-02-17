@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  height: 100vh;
-  background-color: #343a40;
-}
 
 #container {
   margin: auto;
