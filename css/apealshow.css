@@ -1,0 +1,45 @@
+.collectfund {
+  background: #e4e2e2;
+  padding: 1rem;
+  margin-top: 6.3rem;
+}
+
+.donatebtn {
+  margin: auto;
+}
+
+.donatebtn button {
+  width: 100%;
+  background: #420908;
+  color: white;
+}
+
+.donatebtn button:hover {
+  width: 100%;
+  background: #F9EE04;
+  color: #420908;
+  border: 1px solid #420908;
+}
+
+.collectfund p {
+  color: #525252;
+}
+
+.ramadanpack {
+  color: #420908;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+  .collectfund {
+    width: 100% !important;
+    margin-top: 3rem;
+  }
+  .imgview {
+    width: 100%;
+  }
+  .rama {
+    width: 100% !important;
+    text-align: center;
+  }
+}/*# sourceMappingURL=apealshow.css.map */

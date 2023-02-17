@@ -14,7 +14,7 @@
           <h2 class="form-headline">Send us a message</h2>
         </div>
         <div class="volunteer mt-2">
-          <a href="volunteer.php" class="btn">Be a volunteers</a>
+          <a href="volunteer.php" class="btn">Become a volunteers</a>
         </div>
       </div>
       

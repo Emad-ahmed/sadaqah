@@ -6,11 +6,11 @@
 <style>
     .carousel-item img{
         height: 30rem;
-        object-fit:cover;
+        background-size :cover;
     }
 
     .maincard .card {
-    height:24rem;
+    height:28rem !important;
     border-bottom:1px solid 
   }
   @media screen and (max-width: 768px) {
@@ -23,59 +23,82 @@
     {
       position: absolute;
       top: 10rem;
+    
     }
     .carousel-control-prev-icon
     {
       position: absolute;
       top: 10rem;
     }
+
+    @media screen and (max-width: 900px) {
+	
+      .carousel-control-next-icon
+    {
+
+      top: 7rem;
+    
+    }
+    .carousel-control-prev-icon
+    {
+
+      top: 7rem;
+    }
+	
+}
 }
 
 </style>
 
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-info" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="bg-info" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="bg-info" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
+    <a href="fullapealshow.php">
     <div class="carousel-item active">
       <img src="img/car1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+       
         <div>
-            <a href="" class="btn btndonate pt-2 pb-2">Donate Now</a>
+            <a href="fullapealshow.php" class="btn btndonate pt-2 pb-2">Donate Now</a>
         </div>
       </div>
     </div>
+    </a>
+
+    
+    <a href="fullapealshow.php">
     <div class="carousel-item">
       <img src="img/car1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        
         <div>
-            <a href="" class="btn btndonate pt-2 pb-2">Donate Now</a>
+            <a href="fullapealshow.php" class="btn btndonate pt-2 pb-2">Donate Now</a>
         </div>
       </div>
     </div>
+  </a>
+
+  <a href="">
     <div class="carousel-item">
       <img src="img/car1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+     
         <div>
-            <a href="" class="btn btndonate pt-2 pb-2">Donate Now</a>
+            <a href="fullapealshow.php" class="btn btndonate pt-2 pb-2">Donate Now</a>
         </div>
       </div>
     </div>
+    </a>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <button class="carousel-control-prev mt-5" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <button class="carousel-control-next mt-5" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
@@ -256,7 +279,8 @@
         <div class='card_image'><img src='$row[image]'></div>
         <div class='card_content'>
           <h2 class='card_title'>$row[title]</h2>
-          <p class='card_text'>$new_string</p>
+          <p class='card_text'>$new_string..</p>
+          <p class='card_text'><b>Place:</b> $row[place]</p>
           <p class='card_text'>$row[start_date]</p>
 
         </div>

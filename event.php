@@ -23,7 +23,8 @@
         <div class='card_image'><img src='$row[image]'></div>
         <div class='card_content'>
           <h2 class='card_title'>$row[title]</h2>
-          <p class='card_text'>$new_string</p>
+          <p class='card_text'>$new_string...</p>
+          <p class='card_text'><b>Place:</b> $row[place]</p>
           <p class='card_text'>$row[start_date]</p>
 
         </div>
