@@ -50,9 +50,11 @@
         </div>
 
         <div class="mb-3">
-            <label for="video">Video</label>
-            <input type="file"  name="video" class="form-control" placeholder="$" id="video">
+            <label for="video_link">Youtube Video Link</label>
+            <input type="text"  name="video_link" class="form-control" placeholder="Link" id="video_link">
         </div>
+
+       
          
         
         <div class="w-25 m-auto"> 

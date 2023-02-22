@@ -54,6 +54,11 @@ $data = mysqli_fetch_array($run);
             <label for="description">Description</label>
             <textarea name="description" class='form-control' id="" cols="30" rows="10"><?php echo $data['description'] ?></textarea>
         </div>
+
+        <div class="mb-3">
+            <label for="video_link">Youtube Video Link</label>
+            <input type="text"  name="video_link" value="<?php echo $data['video_link'] ?>" class="form-control" placeholder="Link" id="video_link">
+        </div>
         
 
         <div class="mb-3">

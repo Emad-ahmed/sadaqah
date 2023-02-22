@@ -9,20 +9,17 @@ include 'config.php';
 $select_id = $_POST['selecttitle'];
 $title = $_POST['title'];
 $description = $_POST['description'];
-$video = $_FILES['video'];
-
-echo $select_id;
-
-
-$videoLocation = $video['tmp_name'];
-$videoName = $video['name'];
-$videoDes = 'video/' . $videoName;
-$videoSave = $videoName;
-move_uploaded_file($videoLocation, $videoDes);
+$video_link = $_POST['video_link'];
 
 
 
-$sql = "INSERT INTO `apeal_video`(`appeal_id`, `title`, `description`, `video`) VALUES ('$select_id', '$title', '$description', '$videoSave')";
+
+
+
+
+
+
+$sql = "INSERT INTO `apeal_video`(`appeal_id`, `title`, `description`, `video_link`) VALUES ('$select_id', '$title', '$description', '$video_link')";
 
 
 if (!mysqli_query($conn, $sql)) {

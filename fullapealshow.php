@@ -84,7 +84,7 @@ echo "<div class='container'>
     <div class='col-lg-12'>
     <h1 class='text-center'>$row[title]</h1>
     <div class='video-container'>
-    <iframe src='admin/video/$row[video]' frameborder='0' allowfullscreen></iframe>
+    <iframe src='$row[video_link]?autoplay=0' frameborder='0' allowfullscreen></iframe>
     </div>
     </div>
     ";

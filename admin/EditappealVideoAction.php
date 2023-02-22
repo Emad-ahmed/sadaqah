@@ -10,6 +10,7 @@ $id = $_POST['id'];
 $select_id = $_POST['select_id'];
 $title = $_POST['title'];
 $description = $_POST['description'];
+$video_link = $_POST['video_link'];
 $video = $_FILES['video'];
 $oldVideo = $_POST['oldVideo'];
 
@@ -26,10 +27,10 @@ move_uploaded_file($videoLocation, $videoDes);
 
 
 if (strlen($videoDes) > 6) {
-    $updateQuery = "UPDATE `apeal_video` SET `appeal_id`='$select_id',`title` ='$title',`description`='$description',`video`='$videoSave' WHERE id='$id'";
+    $updateQuery = "UPDATE `apeal_video` SET `appeal_id`='$select_id',`title` ='$title',`description`='$description', `video_link` = '$video_link', `video`='$videoSave' WHERE id='$id'";
     move_uploaded_file($videoLocation, $videoDes);
 } else {
-    $updateQuery = "UPDATE `apeal_video` SET `appeal_id`='$select_id',`title` ='$title',`description`='$description',`video`='$oldVideo' WHERE id='$id'";
+    $updateQuery = "UPDATE `apeal_video` SET `appeal_id`='$select_id',`title` ='$title',`description`='$description', `video_link` = '$video_link',`video`='$oldVideo' WHERE id='$id'";
     move_uploaded_file($videoLocation, $oldVideo);
 }
 
@@ -37,7 +38,7 @@ if (strlen($videoDes) > 6) {
 if (!mysqli_query($conn, $updateQuery)) {
     die("Not Inserted!");
 }else{
-    echo "<script>alert('Image Changed Successfully!!')</script>";
+    echo "<script>alert('Video Changed Successfully!!')</script>";
     echo "<script>location.href='videoappealshow.php'</script>";
 }
 

@@ -2,7 +2,7 @@
 
 body {
 
-	font-family: 'Open Sans', sans-serif !important;
+
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -13,7 +13,6 @@ h1 {
 	font-family: 'Open Sans', sans-serif !important;
 
 }
-
 
 .container {
 	position: relative;
@@ -54,11 +53,12 @@ nav .links {
 	float: right;
 	padding: 0;
 	margin: 0;
-	width: 60%;
+	width: 70%;
 	height: 100%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	margin-top: -6rem;
 }
 nav .links li {
 	list-style: none;
@@ -67,8 +67,8 @@ nav .links a {
 	display: block;
 	padding: 1em;
 	font-size: 16px;
-	font-weight: bold;
 	color: #420908;
+	font-weight: 600;
 	text-decoration: none;
 }
 .carousel-caption
@@ -78,7 +78,7 @@ nav .links a {
 }
 #nav-toggle {
 	position: absolute;
-	/* top: -100px; */
+	
 	display: none;
 }
 nav .icon-burger {
@@ -104,13 +104,14 @@ nav .icon-burger .line {
 		
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
 	nav .logo {
 		float: none;
 		width: auto;
 		justify-content: center;
 	}
 	nav .links {
+		margin-top: 0 !important;
 		float: none;
 		position: fixed;
 		z-index: 9;
@@ -118,7 +119,7 @@ nav .icon-burger .line {
 		right: 0;
 		top: 100px;
 		bottom: 100%;
-		width: auto;
+		width: 100% !important;
 		height: auto;
 		flex-direction: column;
 		justify-content: space-evenly;
@@ -179,7 +180,20 @@ nav .links a:hover{
 	color: #420908 !important;
 }
 
-.dropdown {
+.dropbtn {
+	background-color: none !important;
+	color: #420908 !important;
+	padding: 16px;
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+	background-color: #2980B9;
+  }
+  
+  .dropdown {
 	position: relative;
 	display: inline-block;
   }
@@ -187,13 +201,36 @@ nav .links a:hover{
   .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: #f9f9f9;
+	background-color: #f1f1f1;
 	min-width: 160px;
+	overflow: auto;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	padding: 12px 16px;
 	z-index: 1;
   }
   
-  .dropdown:hover .dropdown-content {
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
 	display: block;
   }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+
+  .appeal
+  {
+	color: #420908 !important;
+	font-weight: bolder !important;
+	margin-right: 0.6rem;
+	margin-left: 0.6rem;
+  }
+
+
+  /* top: -100px; */
+
+  
+
+
