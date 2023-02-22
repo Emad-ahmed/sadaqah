@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 body {
-	padding: 0;
-	margin: 0;
+
+	font-family: 'Open Sans', sans-serif !important;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
+
+h1 {
+
+	font-family: 'Open Sans', sans-serif !important;
+
+}
+
+
 .container {
 	position: relative;
 	margin-top: 100px;
@@ -18,8 +31,9 @@ nav {
 	top: 0;
 	font-family: 'Montserrat', sans-serif;
 	padding: 0 5%;
-	height: 100px;
-	background-image: linear-gradient(to bottom, #420908, #000000);
+	height: 6rem;
+	background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+	box-shadow: 1px 0.5px 1px 0.5px;
 	
 }
 .myimg
@@ -54,7 +68,7 @@ nav .links a {
 	padding: 1em;
 	font-size: 16px;
 	font-weight: bold;
-	color: white;
+	color: #420908;
 	text-decoration: none;
 }
 .carousel-caption
@@ -64,7 +78,8 @@ nav .links a {
 }
 #nav-toggle {
 	position: absolute;
-	top: -100px;
+	/* top: -100px; */
+	display: none;
 }
 nav .icon-burger {
 	display: none;
@@ -76,10 +91,18 @@ nav .icon-burger {
 nav .icon-burger .line {
 	width: 30px;
 	height: 5px;
-	background-color: #fff;
+	background-color: #420908;
 	margin: 5px;
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+	nav {
+		
+		height: 6.2rem;
+		
+		
+	}
 }
 @media screen and (max-width: 768px) {
 	nav .logo {
@@ -99,7 +122,7 @@ nav .icon-burger .line {
 		height: auto;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background-color: rgba(0,0,0,.8);
+		background-color: rgba(255, 255, 255, 0.8);
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
@@ -135,5 +158,42 @@ nav .icon-burger .line {
 }
 
 nav .links a:hover{
-	color: #F9EE04;
+	color: black;
 }
+
+.DonateNow
+{
+	background: #420908;
+	color: white;
+	border-radius: 10rem;
+	padding-top: 0.5rem !important;
+	padding-bottom: 0.4rem !important;
+	color: white !important;
+	border: 1px solid white;
+}
+
+
+.DonateNow:hover{
+	background: white;
+	border: 1px solid #420908 !important;
+	color: #420908 !important;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }

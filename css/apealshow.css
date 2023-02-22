@@ -42,4 +42,22 @@
     width: 100% !important;
     text-align: center;
   }
+}
+.mthing {
+  width: 100% !important;
+  margin: auto;
+  text-align: center;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0.7rem !important;
+  height: 70% !important;
+  width: 100% !important;
+  border-radius: 5rem 2rem 5rem 2rem;
+}
+
+.col-lg-12 h1 {
+  color: #420908;
+  font-weight: 500;
 }/*# sourceMappingURL=apealshow.css.map */

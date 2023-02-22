@@ -19,7 +19,7 @@ $data = mysqli_fetch_array($datafetchquery);
 echo "<div class='eventshow'>
 
    <div class='video-container'>
-   <iframe src='$data[video]' frameborder='0' allowfullscreen></iframe>
+   <iframe src='admin/video/$data[video]' frameborder='0' allowfullscreen></iframe>
    </div>
    <div class='myview'>
    <div class='mt-3 titleview'>

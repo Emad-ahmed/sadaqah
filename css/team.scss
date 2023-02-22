@@ -6,7 +6,7 @@
 .meet h1{
   color: #420908;
   font-size:clamp(2.5rem, 10vw, 5rem);
-  font-family: 'Parisienne', cursive;
+  font-family: 'Parisienne', cursive !important;
 }
 .card-pink{
   border-radius: 6px; 

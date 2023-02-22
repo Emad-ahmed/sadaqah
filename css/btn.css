@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* -------------------------------- 
+
+💡 How to create gradient borders in CSS
+🔗 https://codyhouse.co/nuggets/css-gradient-borders
+
+-------------------------------- */
+/* method 2 -> use background-clip to support border-radius */
+/* demo stuff */
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 3rem;
+  padding-top: 1rem !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-gradient-1 {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  color: #420908;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.btn-gradient-1:hover {
+  background: #420908;
+  color: white !important;
+}
+
+.btn-gradient-1 {
+  background: linear-gradient(white, white) padding-box, linear-gradient(to right, #420908, darkorchid) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}/*# sourceMappingURL=btn.css.map */

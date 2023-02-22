@@ -7,16 +7,15 @@
   box-sizing: border-box;
 }
 
+.eventtext {
+  color: #420908;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 .maincard {
   max-width: 90%;
   margin: 0 auto;
   margin-top: 9rem;
-  text-align: center;
-}
-
-.maincard h1 {
-  font-size: 24px;
-  font-weight: 400;
   text-align: center;
 }
 
@@ -106,6 +105,8 @@
 }
 
 .card:hover {
+  transition: 2s;
   transform: scale(1.05);
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #004080;
 }/*# sourceMappingURL=event.css.map */

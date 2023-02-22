@@ -1,0 +1,137 @@
+.main
+{
+
+    margin-top: 0.4rem;
+    width: 60%;
+    margin: auto;
+    background: #fcfcfc;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 2px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
+}
+
+.btn{
+    background: #420908;
+    color: white;
+}
+
+.btn:hover{
+    background: white;
+    color: #420908;
+    border: 1px solid #420908;
+}
+
+.event label
+{
+    color: black;
+    font-weight: 400;
+}
+
+table,th,td,tr,tr,thead,tbody
+{
+    border: 1px solid black !important;
+    text-align: center;
+    margin: auto;
+    padding: 0.4rem;
+    
+}
+
+
+.jtable__panel
+{
+    padding-left: 4.2%;
+}
+
+
+.jtable__panel input{
+    padding: 0.3rem;
+    width: 60%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+table img{
+    width: 7rem;
+    height: 5rem;
+    object-fit: cover;
+}
+
+
+
+
+.btn-info
+{
+    background: #420908 !important;
+}
+
+
+.btn-info:hover{
+    color: white;
+}
+
+.btn-danger{
+    background: red !important;
+}
+
+.breadcrumb
+{
+    display: flex;
+    justify-content: center;
+    background: #d6d5d5;
+    margin-top: 1rem;
+    padding: 0.6rem;
+}
+
+
+
+  
+  @media (max-width: 900px) {
+    .container
+    {
+        width: 100% !important;
+    }
+    .main {
+        width: 100% !important;
+        overflow-x: auto !important;
+    }
+
+    .btn-info
+    {
+        background: #420908 !important;
+        margin-bottom: 0.4rem !important;
+    }
+    .jtable__panel
+    {
+        padding-left: 0 !important;
+    }
+
+    .nav-btn
+    {
+        background: #420908;
+        color: white;
+        margin-top: 0.9rem !important;
+    }
+
+    table{
+        width: 100% !important;
+    }
+  
+    td, th {
+      padding: 8px;
+    }
+  }
+
+
+  .content
+  {
+    width: 10rem;
+    margin: auto;
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+  }

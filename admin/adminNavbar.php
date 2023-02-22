@@ -16,23 +16,30 @@
 </head>
 
 <body>
-<div class="menu-wrapper show">
-            <div class="menu-icon-wrapper">
-               <a href="" class="menu-icon active"></a>
-            </div>
-            <ul class="menu">
-                <li><a href=""><i class="fas fa-tachometer-alt"></i>SADAQAH ADMIN</a></li>
-                <li><a href=""><i class="fab fa-html5"></i>Add Event</a></li>
-                
-                <li><a href=""><i class="fab fa-php"></i>Add Appeal</a></li>
-                <li><a href=""><i class="fas fa-database"></i>Add </a></li>
-                
-            </ul>
-            
-        </div>
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+     <a href="index.php" class="navbar-brand">Sadaqah Admin</a> 
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="eventshow.php">Event</a>
+    <a href="apealshow.php">Appeal</a>
+    <a href="imageappealshow.php">Appeal Image</a>
+    <a href="videoappealshow.php">Appeal Video</a>
+    <a href="https://jsfiddle.net/user/jo_Geek/">JsFiddle</a>
+  </div>
+</div>
 
-      
-       
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
 <script src="js/index.js"></script>

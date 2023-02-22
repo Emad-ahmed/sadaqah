@@ -14,15 +14,23 @@
    
   <nav>
 	<input id="nav-toggle" type="checkbox">
-	<div class="logo"> <a href="index.php"><img src="img/wel.png" alt="" class="myimg"></a></div>
+	<div class="logo"> <a href="index.php"><img src="img/welfare.png" alt="" class="myimg"></a></div>
 	<ul class="links">
 		<li><a href="index.php">Home</a></li>
 		<li><a href="aboutus.php">About</a></li>
-		<li><a href="#work">Our Work</a></li>
+		<li>
+    <div class="dropdown">
+     <span>Mouse over me</span>
+      <div class="dropdown-content">
+      <a href="">Hello World!</a>
+     </div>
+    </div>
+
+    </li>
     <li><a href="event.php">Event</a></li>
 		<li><a href="zakatCalculator.php">Zakat Calculator</a></li>
     <li><a href="contact.php">Contact</a></li>
-		<li><a href="#contact">FAQ</a></li>
+		<li><a href="#contact" class='DonateNow'>Donate Now</a></li>
 	</ul>
 	<label for="nav-toggle" class="icon-burger">
 		<div class="line"></div>

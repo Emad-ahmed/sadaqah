@@ -46,7 +46,7 @@
         <h1>
         Meet our team
        </h1>
-        <p class="lead font-weight-normal mt-4" style="color: #111827;margin-bottom: 3.5em;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id tortor. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante?</p>
+        <p class="lead font-weight-normal mt-4" style="color: #111827;margin-bottom: 3.5em;">Being part of a charity team can provide a sense of fulfillment and purpose, as well as opportunities for personal growth and development through the act of giving back to the community.</p>
     
       </div>
           </div>

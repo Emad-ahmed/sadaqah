@@ -1,5 +1,5 @@
 .donation {
-  background: #c7c5c5;
+  background: #420908;
   padding-bottom: 1rem;
   margin-top: -6.2rem;
 }
@@ -27,18 +27,18 @@
 }
 
 .donation button {
-  background: #420908 !important;
+  background: white !important;
   width: 12rem;
-  color: white;
+  color: #420908;
   border: none;
   padding: 0.4rem;
   margin-top: 0.3rem;
 }
 
 .donation button:hover {
-  background: white !important;
-  color: black !important;
-  border: 1px solid #005BAA;
+  background: #420908 !important;
+  color: white !important;
+  border: 1px solid white;
 }
 
 .input-group-text {
@@ -80,13 +80,21 @@
   color: #18d4ca;
 }
 
+.mycard {
+  height: 20rem !important;
+  box-shadow: 1px 1px 1px 1px;
+}
+
 .card {
-  height: 18rem;
+  transition: 1s;
+  border-radius: 1rem;
+  width: 100%;
 }
 
 .card:hover {
   transform: scale(1.05);
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #420908;
 }
 
 .card-text {
@@ -132,14 +140,15 @@
 }
 
 .btndonate {
-  background: white !important;
+  background: #420908 !important;
   margin-top: 1rem;
   width: 14rem;
+  color: white !important;
 }
 
 .btndonate:hover {
-  background: #420908 !important;
-  color: #FAED12 !important;
+  background: white !important;
+  color: #420908 !important;
   border: 1px solid #FAED12;
   transition: 1s;
 }
@@ -149,6 +158,12 @@
 }
 
 @media screen and (max-width: 900px) {
+  .card {
+    width: 100% !important;
+    margin-bottom: 3rem;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
   .donation {
     text-align: center !important;
   }
@@ -170,4 +185,33 @@
 }
 .cards_item a {
   text-decoration: none !important;
+}
+
+.appeal {
+  color: #420908 !important;
+  font-weight: 500 !important;
+}
+
+.zakacard {
+  background: #0778D4;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.zakacard .card img {
+  height: 14rem !important;
+}
+
+.zakacard .card-title {
+  color: #420908 !important;
+  font-weight: 600;
+}
+
+.zakacard a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.carousel-control-prev-icon {
+  font-weight: bolder !important;
 }/*# sourceMappingURL=index.css.map */

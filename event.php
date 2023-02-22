@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="css/event.css">
 
 <div class="main maincard">
-    <h2 class="text-center mb-4">Event</h2>
+    <h2 class="text-center eventtext mb-4 mt-1">Event</h2>
   <ul class="cards">
   <?php
     include 'config.php';
@@ -20,7 +20,7 @@
     echo "<li class='cards_item'>
       <a href='eventshow.php?id=$row[id]' class='text-decoration-none'>
       <div class='card'>
-        <div class='card_image'><img src='$row[image]'></div>
+        <div class='card_image'><img src='admin/eventImage/$row[image]'></div>
         <div class='card_content'>
           <h2 class='card_title'>$row[title]</h2>
           <p class='card_text'>$new_string...</p>
